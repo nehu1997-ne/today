@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ThirdApp</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <app-root></app-root>
+</body>
+</html>
+<!-- <div class="container">
+  <div class="row">
+      <div class="col-6 offset-3">
+          <div class="card">
+              <div class="card-header">
+                  <h4>Employee Registration</h4>
+              </div>
+              <div class="card-body">
+                  <form (ngSubmit)="submit()"  [formGroup]="formdata">
+                      
+                      <div class="form-group">
+                          <input type="hidden">
+                          <input type="text" class="form-control" placeholder="Enter Your Name" name="firstname" formControlName="name">
+
+                      </div>
+                      <div class="form-group">
+                          <input type="hidden">
+                          <input type="email" class="form-control" placeholder="Enter Your Email" name="email" formControlName="email">
+                      </div>
+                      <div class="form-group">
+                          <input type="hidden">
+                          <input type="number" class="form-control" placeholder=" enter your age" name="age" formControlName="age">
+                      </div>
+                      <div class="form-group">
+                          <input type="hidden">
+                          <input type="number" class="form-control" placeholder=" enter your Number" name="number" formControlName="number">
+                      </div>
+                      <div class="form-group">
+                          <input type="hidden">
+                          <input type="text" class="form-control" placeholder=" enter your address" name="address" formControlName="address">
+                      </div>
+                      <div class="form-group">
+                          <button class="btn btn-success" [disabled]="!formdata.valid">{{btnText}}</button>
+                          <button class="btn btn-warning">Cancel</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+      <table class="table table-bordered table-hover mt-5">
+      <thead>
+          <tr>
+        
+              <th></th>
+          </tr>
+          <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>age</th>
+              <th>number</th>
+              <th>address</th>
+              <th>Action</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let emp of Employees">
+              <td>{{emp.id}}</td>
+              <td>{{emp.firstname}}</td>
+              <td>{{emp.email}}</td>
+              <td>{{emp.age}}</td>
+              <td>{{emp.number}}</td>
+              <td>{{emp.address}}</td>
+              <td>
+                  <button class="btn btn-danger mx-2" href="#" (click)="DeleteEmployee(emp.id)">delete</button>
+                  <button class= "btn btn-warning" href="#" (click)="EditEmployee(emp)">edit</button>
+  
+              </td>
+  
+          </tr>
+      </tbody>
+  </table>
+  </div> -->
